@@ -30,12 +30,12 @@
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
                 <?php 
-                    #PHP Building Method  for count word
-                    # strrev, 
+                    #PHP Building Method
+                    # strpos, 
 
                     $name = "Jubayed Alam";
-                    echo strrev($name);
-                    #output : malA deyabuJ
+                    echo strpos($name,"Alam");
+                    #output : 8
 
                 ?>
             </div>
