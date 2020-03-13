@@ -30,12 +30,12 @@
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
                 <?php 
-                    // echo $name;
-
-                    $a = 10;
-                    $b = 5;
-                    $c = $a + $b;
-                    echo "Total = " . $c;
+                // what is the different echo & print 
+                    // * echo can contain multiple parameter like  echo( "PHP","nice" );
+                    // * print can't contain multiple parameter
+                    echo "PHP","Nice";
+                    echo "</br>";
+                    print("PHP is Nice");
                 ?>
             </div>
 
