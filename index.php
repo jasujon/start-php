@@ -30,8 +30,12 @@
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
                 <?php 
-                    #php Data Type List
-                    // 1.string 2.integer 3.float 4.boolean 5.array 6.object 7.null 
+                    #PHP Building Method 
+                    # strlen , 
+
+                    $name = "Jubayed Alam";
+                    echo strlen($name);
+
                 ?>
             </div>
 
