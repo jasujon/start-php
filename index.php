@@ -30,11 +30,11 @@
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
                 <?php 
-                    #PHP Building Method 
-                    # strlen , 
+                    #PHP Building Method  for count word
+                    # str_word_count, 
 
                     $name = "Jubayed Alam";
-                    echo strlen($name);
+                    echo str_word_count($name);
 
                 ?>
             </div>
