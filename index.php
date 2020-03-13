@@ -30,18 +30,19 @@
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
                 <?php 
-                    #What is constant 
-                    # constant like a variable but some different have constant and variable
-                    # 1. u can change define variable  but u can't change constant 
-                    # 2. variable can use a fixed place but constant use any kind page in your project , constant is global    
-                    
-                    #create constant 
-                        # define(name , value , case-insensitive)
+                     Kind of Operators in PHP
 
-                    define("VALUE"," I am Learning PHP ..!");
-                    echo VALUE;
+                     1. Arithmetic Operators
+                     2. Assignment Operators
+                     3. Comparison Operators
+                     4. Increment/Decrement Operators
+                     5. Logical Operators
+                     6. String Operators
+                     7. Array Operators
 
-                    #output : I am Learning PHP ..!
+
+
+
 
                 ?>
             </div>
