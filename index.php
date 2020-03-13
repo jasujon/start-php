@@ -30,12 +30,18 @@
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
                 <?php 
-                    #PHP Building Method
-                    # str_replace, 
+                    #What is constant 
+                    # constant like a variable but some different have constant and variable
+                    # 1. u can change define variable  but u can't change constant 
+                    # 2. variable can use a fixed place but constant use any kind page in your project , constant is global    
+                    
+                    #create constant 
+                        # define(name , value , case-insensitive)
 
-                    $name = "Jubayed Alam";
-                    echo str_replace("Jubayed","Sultan",$name);
-                    #output : Sultan Alam
+                    define("VALUE"," I am Learning PHP ..!");
+                    echo VALUE;
+
+                    #output : I am Learning PHP ..!
 
                 ?>
             </div>
