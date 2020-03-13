@@ -31,10 +31,11 @@
             <div class="container" style="padding-top:20px;">
                 <?php 
                     #PHP Building Method  for count word
-                    # str_word_count, 
+                    # strrev, 
 
                     $name = "Jubayed Alam";
-                    echo str_word_count($name);
+                    echo strrev($name);
+                    #output : malA deyabuJ
 
                 ?>
             </div>
