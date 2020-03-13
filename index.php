@@ -1,3 +1,7 @@
+<?php
+    // $name = "Israk Jahan";
+    $font = "verdana";
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -8,6 +12,10 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        body(font-family: <?php echo $font ;?>)
+    </style>
   </head>
   <body>
         <header >
@@ -22,7 +30,12 @@
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
                 <?php 
-                    echo "Hello PHP";
+                    // echo $name;
+
+                    $a = 10;
+                    $b = 5;
+                    $c = $a + $b;
+                    echo "Total = " . $c;
                 ?>
             </div>
 
