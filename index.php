@@ -31,11 +31,11 @@
             <div class="container" style="padding-top:20px;">
                 <?php 
                     #PHP Building Method
-                    # strpos, 
+                    # str_replace, 
 
                     $name = "Jubayed Alam";
-                    echo strpos($name,"Alam");
-                    #output : 8
+                    echo str_replace("Jubayed","Sultan",$name);
+                    #output : Sultan Alam
 
                 ?>
             </div>
