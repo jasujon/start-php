@@ -30,13 +30,44 @@
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
                 <?php 
-                    #Conditional Assignment Operators
+                    #Switch Statements
                     
-                    #The PHP conditional assignment operators are used to set a value depending on conditions:
+                    // switch (n) {
+                    //     case label1:
+                    //         code to be executed if n=label1;
+                    //         break;
+                    //     case label2:
+                    //         code to be executed if n=label2;
+                    //         break;
+                    //     case label3:
+                    //         code to be executed if n=label3;
+                    //         break;
+                    //     ...
+                    //     default:
+                    //         code to be executed if n is different from all labels;
+                    // }
 
-                    # ?: (Ternary) Exm:	$x = expr1 ? expr2 : expr3 Result: Returns the value of $x.The value of $x is expr2 if expr1 = TRUE.The value of $x is expr3 if expr1 = FALSE
+                    $coding = "javaScript";
 
-                    # ?? (Null coalescing) Exm:$x = expr1 ?? expr2 Result: Returns the value of $x.The value of $x is expr1 if expr1 exists, and is not NULL.If expr1 does not exist, or is NULL, the value of $x is expr2.Introduced in PHP 7
+                    switch($coding){
+
+                        case "PHP":
+                            echo "I Love PHP";
+                        break;
+
+                        case "Python":
+                            echo "I Love Python";
+                        break;
+
+                        case "javaScript":
+                            echo "I Love javaScript";
+                        break;
+
+                        default:
+                            echo "I Love Programing";
+
+
+                    }
                     
 
 
