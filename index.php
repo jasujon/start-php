@@ -30,20 +30,14 @@
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
                 <?php 
-                    #Comparison Operators
+                    #Increment / Decrement Operators
                     
-                    #The PHP comparison operators are used to compare two values (number or string):
+                    #The PHP increment operators are used to increment a variable's value.The PHP decrement operators are used to decrement a variable's value
 
-                    # == (Equal)  EXM: $x == $y    Description = Returns true if $x is equal to $y
-                    # === (Identical)  EXM: $x === $y    Description = Returns true if $x is equal to $y, and they are of the same type
-                    # != (Not equal)  EXM: $x != $y    Description = Returns true if $x is not equal to $y
-                    # <> (Not equal)  EXM: $x <> $y    Description = Returns true if $x is not equal to $y
-                    # !== (Not identical)  EXM: $x !== $y    Description = Returns true if $x is not equal to $y,  or they are not of the same type
-                    # > (Greater than)  EXM: $x > $y    Description = Returns true if $x is greater than $y
-                    # < (Less than)  EXM: $x < $y    Description = Returns true if $x is less than $y
-                    # >= (Greater than or equal to)  EXM: $x >= $y    Description = Returns true if $x is greater than or equal to $y
-                    # <= (Less than or equal to)  EXM: $x <= $y    Description = Returns true if $x is less than or equal to $y
-                    # <=> (Spaceship)  EXM: $x <=> $y    Description = Returns an integer less than, equal to, or greater than zero, depending on if $x is less than, equal to, or greater than $y. Introduced in PHP 7.
+                    # ++$x (Pre-increment) Description = Increments $x by one, then returns $x
+                    # $x++ (Post-increment) Description = Returns $x, then increments $x by one
+                    # --$x (Pre-decrement) Description = Decrements $x by one, then returns $x
+                    # $x-- (Post-decrement) Description = Returns $x, then decrements $x by one
                     
 
 
