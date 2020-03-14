@@ -30,16 +30,16 @@
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
                 <?php 
-                    #Arithmetic Operators
+                    #Assignment Operators
                     
                     #The PHP assignment operators are used with numeric values to write a value to a variable.The basic assignment operator in PHP is "=". It means that the left operand gets set to the value of the assignment expression on the right.
 
-                    # +	(Addition)  Exm : 	$x + $y     Result = Sum of $x and $y
-                    # -	(Subtraction)   Exm : 	$x - $y     Result = Difference of $x and $y
-                    # *	(Multiplication)    Exm : 	$x * $y     Result = Product of $x and $y
-                    # /	(Division)  Exm : 	$x / $y     Result = Quotient of $x and $y
-                    # %	(Modulus)   Exm : 	$x % $y     Result = Remainder of $x divided by $y
-                    # **(Exponentiation)    Exm : 	$x ** $y    Result = Result of raising $x to the $y'th power
+                    # x = y  Same As : 	x = y     Description = 	The left operand gets set to the value of the expression on the right
+                    # x += y  Same As : x = x + y     Description = Addition
+                    # x -= y  Same As : x = x - y     Description = Subtraction
+                    # x *= y  Same As : x = x * y     Description = Multiplication
+                    # x /= y  Same As : x = x / y     Description = Division
+                    # x %= y  Same As : x = x % y     Description = Modulus
                     
 
 
