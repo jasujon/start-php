@@ -30,16 +30,13 @@
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
                 <?php 
-                    #Array Operators
+                    #Conditional Assignment Operators
                     
-                    #The PHP array operators are used to compare arrays.
+                    #The PHP conditional assignment operators are used to set a value depending on conditions:
 
-                    # + (Union) Exm:$x + $y Result: Union of $x and $y
-                    # == (Equality) Exm:$x == $y Result: Returns true if $x and $y have the same key/value pairs
-                    # === (Identity) Exm:$x === $y Result: Returns true if $x and $y have the same key/value pairs in the same order and of the same types
-                    # != (Inequality) Exm:$x != $y Result: 	Returns true if $x is not equal to $y
-                    # <> (Inequality) Exm:$x <> $y Result: Returns true if $x is not equal to $y
-                    # !== (Non-identity) Exm:$x !== $y Result: Returns true if $x is not identical to $y
+                    # ?: (Ternary) Exm:	$x = expr1 ? expr2 : expr3 Result: Returns the value of $x.The value of $x is expr2 if expr1 = TRUE.The value of $x is expr3 if expr1 = FALSE
+
+                    # ?? (Null coalescing) Exm:$x = expr1 ?? expr2 Result: Returns the value of $x.The value of $x is expr1 if expr1 exists, and is not NULL.If expr1 does not exist, or is NULL, the value of $x is expr2.Introduced in PHP 7
                     
 
 
