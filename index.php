@@ -30,20 +30,17 @@
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
                 <?php 
-                    #while Loop
+                    #for Loop
                     
                  #Syntax
 
-                //  while (condition is true) {
-                //     code to be executed;
+                //  for (init counter; test counter; increment counter) {
+                //     code to be executed for each iteration;
                 // }
 
-                    $x=1;
-                    while($x <= 10){
-                        echo "The Number Is : ".$x;
-                        echo "<br>";
-                        $x++;
-                    }
+                for ($x = 0; $x <= 10; $x++) {
+                    echo "The number is: $x <br>";
+                }
                     
 
 
