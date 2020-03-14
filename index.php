@@ -30,12 +30,16 @@
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
                 <?php 
-                    #String Operators
+                    #Array Operators
                     
-                    #PHP has two operators that are specially designed for strings.
+                    #The PHP array operators are used to compare arrays.
 
-                    # . (Concatenation) Exm: $txt1 . $txt2 Description = Concatenation of $txt1 and $txt2
-                    # .= (Concatenation assignment) Exm: $txt1 .= $txt2 Description = Appends $txt2 to $txt1
+                    # + (Union) Exm:$x + $y Result: Union of $x and $y
+                    # == (Equality) Exm:$x == $y Result: Returns true if $x and $y have the same key/value pairs
+                    # === (Identity) Exm:$x === $y Result: Returns true if $x and $y have the same key/value pairs in the same order and of the same types
+                    # != (Inequality) Exm:$x != $y Result: 	Returns true if $x is not equal to $y
+                    # <> (Inequality) Exm:$x <> $y Result: Returns true if $x is not equal to $y
+                    # !== (Non-identity) Exm:$x !== $y Result: Returns true if $x is not identical to $y
                     
 
 
