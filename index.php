@@ -30,16 +30,12 @@
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
                 <?php 
-                    #Logical Operators
+                    #String Operators
                     
-                    #The PHP logical operators are used to combine conditional statements.
+                    #PHP has two operators that are specially designed for strings.
 
-                    # and(And) Exm: $x and $y Description = True if both $x and $y are true
-                    # or(Or) Exm: $x or $y Description = True if either $x or $y is true
-                    # xor(Xor) Exm: $x xor $y Description = True if either $x or $y is true, but not both
-                    # && (And) Exm: $x && $y Description = 	True if both $x and $y are true
-                    # || (Or) Exm: 	$x || $y Description = True if either $x or $y is true
-                    # ! (Not) Exm: 	!$x Description = True if $x is not true
+                    # . (Concatenation) Exm: $txt1 . $txt2 Description = Concatenation of $txt1 and $txt2
+                    # .= (Concatenation assignment) Exm: $txt1 .= $txt2 Description = Appends $txt2 to $txt1
                     
 
 
