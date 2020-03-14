@@ -30,43 +30,19 @@
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
                 <?php 
-                    #Switch Statements
+                    #while Loop
                     
-                    // switch (n) {
-                    //     case label1:
-                    //         code to be executed if n=label1;
-                    //         break;
-                    //     case label2:
-                    //         code to be executed if n=label2;
-                    //         break;
-                    //     case label3:
-                    //         code to be executed if n=label3;
-                    //         break;
-                    //     ...
-                    //     default:
-                    //         code to be executed if n is different from all labels;
-                    // }
+                 #Syntax
 
-                    $coding = "javaScript";
+                //  while (condition is true) {
+                //     code to be executed;
+                // }
 
-                    switch($coding){
-
-                        case "PHP":
-                            echo "I Love PHP";
-                        break;
-
-                        case "Python":
-                            echo "I Love Python";
-                        break;
-
-                        case "javaScript":
-                            echo "I Love javaScript";
-                        break;
-
-                        default:
-                            echo "I Love Programing";
-
-
+                    $x=1;
+                    while($x <= 10){
+                        echo "The Number Is : ".$x;
+                        echo "<br>";
+                        $x++;
                     }
                     
 
