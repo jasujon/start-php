@@ -30,14 +30,16 @@
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
                 <?php 
-                    #Increment / Decrement Operators
+                    #Logical Operators
                     
-                    #The PHP increment operators are used to increment a variable's value.The PHP decrement operators are used to decrement a variable's value
+                    #The PHP logical operators are used to combine conditional statements.
 
-                    # ++$x (Pre-increment) Description = Increments $x by one, then returns $x
-                    # $x++ (Post-increment) Description = Returns $x, then increments $x by one
-                    # --$x (Pre-decrement) Description = Decrements $x by one, then returns $x
-                    # $x-- (Post-decrement) Description = Returns $x, then decrements $x by one
+                    # and(And) Exm: $x and $y Description = True if both $x and $y are true
+                    # or(Or) Exm: $x or $y Description = True if either $x or $y is true
+                    # xor(Xor) Exm: $x xor $y Description = True if either $x or $y is true, but not both
+                    # && (And) Exm: $x && $y Description = 	True if both $x and $y are true
+                    # || (Or) Exm: 	$x || $y Description = True if either $x or $y is true
+                    # ! (Not) Exm: 	!$x Description = True if $x is not true
                     
 
 
