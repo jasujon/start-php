@@ -30,16 +30,20 @@
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
                 <?php 
-                    #Assignment Operators
+                    #Comparison Operators
                     
-                    #The PHP assignment operators are used with numeric values to write a value to a variable.The basic assignment operator in PHP is "=". It means that the left operand gets set to the value of the assignment expression on the right.
+                    #The PHP comparison operators are used to compare two values (number or string):
 
-                    # x = y  Same As : 	x = y     Description = 	The left operand gets set to the value of the expression on the right
-                    # x += y  Same As : x = x + y     Description = Addition
-                    # x -= y  Same As : x = x - y     Description = Subtraction
-                    # x *= y  Same As : x = x * y     Description = Multiplication
-                    # x /= y  Same As : x = x / y     Description = Division
-                    # x %= y  Same As : x = x % y     Description = Modulus
+                    # == (Equal)  EXM: $x == $y    Description = Returns true if $x is equal to $y
+                    # === (Identical)  EXM: $x === $y    Description = Returns true if $x is equal to $y, and they are of the same type
+                    # != (Not equal)  EXM: $x != $y    Description = Returns true if $x is not equal to $y
+                    # <> (Not equal)  EXM: $x <> $y    Description = Returns true if $x is not equal to $y
+                    # !== (Not identical)  EXM: $x !== $y    Description = Returns true if $x is not equal to $y,  or they are not of the same type
+                    # > (Greater than)  EXM: $x > $y    Description = Returns true if $x is greater than $y
+                    # < (Less than)  EXM: $x < $y    Description = Returns true if $x is less than $y
+                    # >= (Greater than or equal to)  EXM: $x >= $y    Description = Returns true if $x is greater than or equal to $y
+                    # <= (Less than or equal to)  EXM: $x <= $y    Description = Returns true if $x is less than or equal to $y
+                    # <=> (Spaceship)  EXM: $x <=> $y    Description = Returns an integer less than, equal to, or greater than zero, depending on if $x is less than, equal to, or greater than $y. Introduced in PHP 7.
                     
 
 
