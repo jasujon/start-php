@@ -30,16 +30,19 @@
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
                 <?php 
-                    #for Loop
+                    #foreach loop
                     
                  #Syntax
+                //  foreach (array as $value){ 
+                //     //code to be executed; 
+                //   } 
 
-                //  for (init counter; test counter; increment counter) {
-                //     code to be executed for each iteration;
-                // }
+                $salary[]=2000;
+                $salary[]=3000;
+                $salary[]=5000;
 
-                for ($x = 0; $x <= 10; $x++) {
-                    echo "The number is: $x <br>";
+                foreach($salary as $value){
+                    echo "Salary: $value<br>";
                 }
                     
 
