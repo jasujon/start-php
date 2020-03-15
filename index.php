@@ -30,27 +30,11 @@
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
                 <?php 
-                    #Functions
+                    # kind of Array 
                     
-                    // #without argument
-                    // function school(){
-                    //     echo "This is my School . ";
-                    // }
-
-                    // school();
-                    // # This is my School .
-
-                    #with argument
-                    function school($name){
-                        echo "$name is my School . ";
-                    }
-
-                    school("Horinarayan Pur Union High School..");
-                    # Horinarayan Pur Union High School.. is my School .
-                    
-
-
-
+                    1. Indexed arrays - Arrays with a numeric index
+                    2. Associative arrays - Arrays with named keys
+                    3. Multidimensional arrays - Arrays containing one or more arrays
 
                 ?>
             </div>
