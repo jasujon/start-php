@@ -30,20 +30,23 @@
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
                 <?php 
-                    #foreach loop
+                    #Functions
                     
-                 #Syntax
-                //  foreach (array as $value){ 
-                //     //code to be executed; 
-                //   } 
+                    // #without argument
+                    // function school(){
+                    //     echo "This is my School . ";
+                    // }
 
-                $salary[]=2000;
-                $salary[]=3000;
-                $salary[]=5000;
+                    // school();
+                    // # This is my School .
 
-                foreach($salary as $value){
-                    echo "Salary: $value<br>";
-                }
+                    #with argument
+                    function school($name){
+                        echo "$name is my School . ";
+                    }
+
+                    school("Horinarayan Pur Union High School..");
+                    # Horinarayan Pur Union High School.. is my School .
                     
 
 
