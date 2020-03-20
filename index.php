@@ -30,32 +30,19 @@
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
                 <?php 
-                    # Indexed arrays
+                    # Associative arrays
                     
-                    $x = array(1,2,3,4,5);
-                    //echo $x[0]; 
-                            #output : 1
-                    /*
-                    $x[0] = 1;
-                    $x[1] = 2;
-                    $x[2] = 3;
-                    $x[3] = 4;
-                    $x[4] = 5;
-                    */
+                     #foreach loop
 
+                     #name as key
 
-                    #count method
-                   // echo "Total " . count($x);      #output : 5 ;
+                     $person = array("Jubayed"=>"25","Alam"=>"25","Israk"=>"18","Sultan"=>"10");
 
-
-                   #for loop 
-                   $total = count($x);
-                   $i = 0;
-                   for($i = 0 ; $i<$total;$i++){
-                       //echo $i;
-                       echo $x[$i];
-                       echo "</br>";
-                   }
+                     foreach($person as $name => $age){
+                         echo "Name Is ".$name. " Age Is ".$age;
+                         echo "</br>";
+ 
+                     }
 
                   
 
