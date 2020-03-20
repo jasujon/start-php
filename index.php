@@ -30,19 +30,28 @@
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
                 <?php 
-                    # Associative arrays
+                    # Multidimensional arrays
                     
-                     #foreach loop
+                    $cars = array(
+                        array("BMW",15,"NICE"),
+                        array("Volvo",30,10),
+                        array("SAAB",20,5),
+                        array("TOYOTA",20,5),
+                    );
 
-                     #name as key
+                    // echo $cars [0][2];
+                    // echo $cars [1][0];
 
-                     $person = array("Jubayed"=>"25","Alam"=>"25","Israk"=>"18","Sultan"=>"10");
+                    for ($row=0; $row<4 ; $row++){
+                        echo "<p>Row Number $row</p>";
 
-                     foreach($person as $name => $age){
-                         echo "Name Is ".$name. " Age Is ".$age;
-                         echo "</br>";
- 
-                     }
+                        echo "<ul>";
+                        for($col = 0 ; $col<3; $col++){
+                            echo "<li>".$cars[$row][$col]."</li>";
+                        }
+
+                        echo "</ul>";
+                    }
 
                   
 
