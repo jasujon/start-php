@@ -30,28 +30,41 @@
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
                 <?php 
-                    # Multidimensional arrays
-                    
-                    $cars = array(
-                        array("BMW",15,"NICE"),
-                        array("Volvo",30,10),
-                        array("SAAB",20,5),
-                        array("TOYOTA",20,5),
-                    );
+                    # Conditional Statements
+                        # 1. if statement 2.if else statement 3. if elseif statement
 
-                    // echo $cars [0][2];
-                    // echo $cars [1][0];
+                        $x = 15;
 
-                    for ($row=0; $row<4 ; $row++){
-                        echo "<p>Row Number $row</p>";
 
-                        echo "<ul>";
-                        for($col = 0 ; $col<3; $col++){
-                            echo "<li>".$cars[$row][$col]."</li>";
+                        #if statement
+                        // if($x > 5){
+                        //     echo "I Love You Sohan";
+                        // }
+                        #output : I Love You Sohan;
+
+                        #if else statement 
+                        // if($x > 15){
+                        //     echo "I Love You Sohan";
+                        // }else{
+                        //     echo "Sorry";
+                        // }
+                        #output : Sorry
+
+
+                        #if elseif statement 
+                        if($x > 15){
+                            echo "I Love You Sohan";
+                        }elseif($x > 10){
+                            echo "I Love You ";
+                        }else{
+                            echo "Sorry"; 
                         }
+                        #output : I Love You
 
-                        echo "</ul>";
-                    }
+
+
+                    
+                    
 
                   
 
