@@ -30,34 +30,33 @@
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
                 <?php 
-                    # Superglobals  _GLOBAL  variable
+                    # Superglobals  _SERVER  variable
+                        #$_SERVER is a PHP super global variable which holds information about headers, paths, and script locations.
+                  
+
+                        echo $_SERVER['PHP_SELF'];      #FOR CURRENTLY WORK LOCATION
+                        #OUTPUT : /start-php/index.php
+                        echo "</br>";
+
+
+                        echo $_SERVER['SERVER_NAME'];   #FOR SERVER LOCATION
                         
-                    
-                    #GLOBAL VARIABLE
-                        $x = 10;
-                        $y = 20;
+                        //OUTPUT : localhost
+                        echo "</br>";
 
-                        // function sum(){
-                        //     global $x;
-                        //     global $y;
+                        echo $_SERVER['SCRIPT_NAME']; # FOR CURRENTLY WORK FULL DETAILS
+                        //OUTPUT :  /start-php/index.php
 
-                        //     $n = $x + $y;
-                        //     echo $n;
-                        // }
-                        // sum();
-                        //echo $n; #output : Notice: Undefined variable: n in D:\xampp\htdocs\start-php\index.php on line 48
+                        echo "</br>";
+
+                        echo $_SERVER['HTTP_USER_AGENT']; # FOR SEE USING BROWSER
+                        //OUTPUT :  Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36
 
 
-                        //output : 30;
+                        echo "</br>";
 
-
-                        function sum(){
-                            $GLOBALS['n'] = $GLOBALS['x'] + $GLOBALS['y'];
-                        }
-
-                        sum();
-                        echo $n;
-                        // #output : 30 ;
+                        echo $_SERVER['SERVER_ADDR']; # FOR SEE SERVER IP ADDRESS
+                        //OUTPUT :  ::1
                   
 
 
