@@ -30,37 +30,46 @@
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
                 <?php 
-                    # Conditional Statements
-                        # 1. if statement 2.if else statement 3. if elseif statement
+                    # Sorting Arrays
+                        
 
-                        $x = 15;
+                    # sort function: 
+                    $names = array("Jubayed","Alam","Sohan","Israk","Shaown");
+                    sort($names);
 
-
-                        #if statement
-                        // if($x > 5){
-                        //     echo "I Love You Sohan";
-                        // }
-                        #output : I Love You Sohan;
-
-                        #if else statement 
-                        // if($x > 15){
-                        //     echo "I Love You Sohan";
-                        // }else{
-                        //     echo "Sorry";
-                        // }
-                        #output : Sorry
+                    for($i = 0 ; $i < 5; $i++){
+                        echo $names[$i];
+                        // echo "</br>";
+                    }
+                    #output : AlamIsrakJubayedShaownSohan
 
 
-                        #if elseif statement 
-                        if($x > 15){
-                            echo "I Love You Sohan";
-                        }elseif($x > 10){
-                            echo "I Love You ";
-                        }else{
-                            echo "Sorry"; 
-                        }
-                        #output : I Love You
+                    # count function: 
+                    $names = array("Jubayed","Alam","Sohan","Israk","Shaown");
+                    // sort($names);
 
+                    $length = count($names);
+
+                    for($i = 0 ; $i < $length; $i++){
+                        echo $names[$i];
+                        // echo "</br>";
+                    }
+                    #output : JubayedAlamSohanIsrakShaown
+
+
+                    # Reverse Sort function: 
+                    $names = array(2,5,6,8,10);
+                    rsort($names);
+
+                    $length = count($names);
+
+                    for($i = 0 ; $i < $length; $i++){
+                        echo $names[$i];
+                        echo " ";
+                    }
+                    #output : 10 8 6 5 2
+
+                       
 
 
                     
