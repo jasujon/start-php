@@ -30,10 +30,66 @@
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
 
-                <!-- GET method -->
-                <a href="test.php?msg=good&txt=bye">Send Some Data</a>
+                <!-- Form Validation -->
+                <form method="post" action=<?php echo $_SERVER['PHP_SELF']?> >
+                    <table>
+                        <tr>
+                            <td>Name : </td>
+                            <td><input type= "text" name= "userName" required></td>
+                        </tr>
+                        <tr>
+                            <td>Email : </td>
+                            <td><input type= "email" name= "email" required ></td>
+                        </tr>
+
+                        <tr>
+                            <td>Comment : </td>
+                            <td><textarea name = "comment" rows="4" cols="22" required></textarea></td>
+                        </tr>
+
+                        <tr>
+                            <td>Gender : </td>
+                            <td>
+                                <input type="radio" name = "gender" value="female" required>Female
+                                <input type="radio" name = "gender" value="male" required>Male
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td> </td>
+                            <td><input type= "submit" name="submit" value="Submit" ></td>
+                        </tr>
+                    </table>
                 
+                </form>
+
+                <?php 
+                    if($_SERVER['REQUEST_METHOD'] == 'POST'){
+                        $name    = validate($_POST['userName']);
+                        $email   = validate($_POST['email']);
+                        $comment = validate($_POST['comment']);
+                        $gender  = validate($_POST['gender']);
+
+
+
+                        echo "name is ".$name."</br>";
+                        echo "email is ".$email."</br>";
+                        echo "comment is ".$comment."</br>";
+                        echo "gender is ".$gender."</br>";
+                    }
+
+
+                    function validate($data){
+                        $data = trim($data);
+                        $data = stripcslashes($data);
+                        $data = htmlspecialchars($data);
+
+                        return $data;
+                    }
+
+                    
                 
+                ?>
             </div>
 
         </div>
