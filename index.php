@@ -30,12 +30,36 @@
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
                 <?php 
-                    # Superglobals
+                    # Superglobals  _GLOBAL  variable
                         
-                    # php have many building Superglobals variable ... You can access any place  
-                     # 1. _GLOBAL  2. _SERVER  3. _REQUEST 4. _POST 5. _GET 6. _FILE  7. _ENV 8. _COOKIE 9. _SESSION   
+                    
+                    #GLOBAL VARIABLE
+                        $x = 10;
+                        $y = 20;
+
+                        // function sum(){
+                        //     global $x;
+                        //     global $y;
+
+                        //     $n = $x + $y;
+                        //     echo $n;
+                        // }
+                        // sum();
+                        //echo $n; #output : Notice: Undefined variable: n in D:\xampp\htdocs\start-php\index.php on line 48
+
+
+                        //output : 30;
+
+
+                        function sum(){
+                            $GLOBALS['n'] = $GLOBALS['x'] + $GLOBALS['y'];
+                        }
+
+                        sum();
+                        echo $n;
+                        // #output : 30 ;
                   
-                     
+
 
                 ?>
             </div>
