@@ -32,45 +32,56 @@
                 <?php 
                     # Sorting Arrays
                         
+                     # 1. local variable  2.global variable 
 
-                    # sort function: 
-                    $names = array("Jubayed","Alam","Sohan","Israk","Shaown");
-                    sort($names);
 
-                    for($i = 0 ; $i < 5; $i++){
-                        echo $names[$i];
-                        // echo "</br>";
+
+                    // #local variable
+                    //  function test1(){
+                    //      $x = 10;
+                    //      echo $x;
+                    //      echo "</br>";
+                    //  }
+
+
+
+                    //  function test2(){
+                    //      echo $x; #output : Notice: Undefined variable: x in D:\xampp\htdocs\start-php\index.php on line 49    note: because its local variable
+                    //      $y = 15;
+                    //      echo $y;
+                    //  } 
+
+                    //  test1();
+                    //  test2();
+                   
+
+
+                     #Global variable
+
+                     $n = 20;
+
+                     function test1(){
+                        global $n;
+                        $x = 10;
+                        echo $x;
+                        echo "</br>";
+                        echo "This is Global variable test1  " . $n;
+                        echo "</br>";
                     }
-                    #output : AlamIsrakJubayedShaownSohan
 
 
-                    # count function: 
-                    $names = array("Jubayed","Alam","Sohan","Israk","Shaown");
-                    // sort($names);
 
-                    $length = count($names);
+                    function test2(){
+                        global $n;
+                        echo "This is Global variable test2  " . $n;
+                        echo "</br>";
+                        $y = 15;
+                        echo $y;
+                    } 
 
-                    for($i = 0 ; $i < $length; $i++){
-                        echo $names[$i];
-                        // echo "</br>";
-                    }
-                    #output : JubayedAlamSohanIsrakShaown
-
-
-                    # Reverse Sort function: 
-                    $names = array(2,5,6,8,10);
-                    rsort($names);
-
-                    $length = count($names);
-
-                    for($i = 0 ; $i < $length; $i++){
-                        echo $names[$i];
-                        echo " ";
-                    }
-                    #output : 10 8 6 5 2
-
-                       
-
+                    test1();
+                    test2();
+                  
 
                     
                     
