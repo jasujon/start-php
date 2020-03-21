@@ -30,31 +30,10 @@
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
 
-                <!-- if our action method is work same page than we can empty action field or use PHP_SELF  -->
-                <!-- <from action="" method="Post"> -->
-                <form action="<?php echo $_SERVER['PHP_SELF']?>" method="post">
-                    UserName : <input type="text" name = "userName">
-                    <input type="submit" value="Submit">
-                </form>
-                <?php 
-                    # Superglobals  $_REQUEST $ Post variable
-                        #PHP $_REQUEST is a PHP super global variable which is used to collect data after submitting an HTML form.
-
-                    if($_SERVER["REQUEST_METHOD"] == "POST"){
-                        $name = $_REQUEST['userName'];
-
-                        if(empty($name)){
-                            echo "<span style='color:red'>UserName can not be Empty</span>";
-                        }else{
-                            echo "You Have been submitted " .$name;
-                        }
-                    }
-                  
-
-                  
-
-
-                ?>
+                <!-- GET method -->
+                <a href="test.php?msg=good&txt=bye">Send Some Data</a>
+                
+                
             </div>
 
         </div>
