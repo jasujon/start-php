@@ -29,34 +29,28 @@
         </header>
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
+
+                <!-- if our action method is work same page than we can empty action field or use PHP_SELF  -->
+                <!-- <from action="" method="Post"> -->
+                <form action="<?php echo $_SERVER['PHP_SELF']?>" method="post">
+                    UserName : <input type="text" name = "userName">
+                    <input type="submit" value="Submit">
+                </form>
                 <?php 
-                    # Superglobals  _SERVER  variable
-                        #$_SERVER is a PHP super global variable which holds information about headers, paths, and script locations.
+                    # Superglobals  $_REQUEST $ Post variable
+                        #PHP $_REQUEST is a PHP super global variable which is used to collect data after submitting an HTML form.
+
+                    if($_SERVER["REQUEST_METHOD"] == "POST"){
+                        $name = $_REQUEST['userName'];
+
+                        if(empty($name)){
+                            echo "<span style='color:red'>UserName can not be Empty</span>";
+                        }else{
+                            echo "You Have been submitted " .$name;
+                        }
+                    }
                   
 
-                        echo $_SERVER['PHP_SELF'];      #FOR CURRENTLY WORK LOCATION
-                        #OUTPUT : /start-php/index.php
-                        echo "</br>";
-
-
-                        echo $_SERVER['SERVER_NAME'];   #FOR SERVER LOCATION
-                        
-                        //OUTPUT : localhost
-                        echo "</br>";
-
-                        echo $_SERVER['SCRIPT_NAME']; # FOR CURRENTLY WORK FULL DETAILS
-                        //OUTPUT :  /start-php/index.php
-
-                        echo "</br>";
-
-                        echo $_SERVER['HTTP_USER_AGENT']; # FOR SEE USING BROWSER
-                        //OUTPUT :  Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36
-
-
-                        echo "</br>";
-
-                        echo $_SERVER['SERVER_ADDR']; # FOR SEE SERVER IP ADDRESS
-                        //OUTPUT :  ::1
                   
 
 
