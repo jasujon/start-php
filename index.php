@@ -30,63 +30,12 @@
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
                 <?php 
-                    # Variable Scope
+                    # Superglobals
                         
-                     # 1. local variable  2.global variable 
-
-
-
-                    // #local variable
-                    //  function test1(){
-                    //      $x = 10;
-                    //      echo $x;
-                    //      echo "</br>";
-                    //  }
-
-
-
-                    //  function test2(){
-                    //      echo $x; #output : Notice: Undefined variable: x in D:\xampp\htdocs\start-php\index.php on line 49    note: because its local variable
-                    //      $y = 15;
-                    //      echo $y;
-                    //  } 
-
-                    //  test1();
-                    //  test2();
-                   
-
-
-                     #Global variable
-
-                     $n = 20;
-
-                     function test1(){
-                        global $n;
-                        $x = 10;
-                        echo $x;
-                        echo "</br>";
-                        echo "This is Global variable test1  " . $n;
-                        echo "</br>";
-                    }
-
-
-
-                    function test2(){
-                        global $n;
-                        echo "This is Global variable test2  " . $n;
-                        echo "</br>";
-                        $y = 15;
-                        echo $y;
-                    } 
-
-                    test1();
-                    test2();
+                    # php have many building Superglobals variable ... You can access any place  
+                     # 1. _GLOBAL  2. _SERVER  3. _REQUEST 4. _POST 5. _GET 6. _FILE  7. _ENV 8. _COOKIE 9. _SESSION   
                   
-
-                    
-                    
-
-                  
+                     
 
                 ?>
             </div>
