@@ -30,7 +30,7 @@
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
                 <?php 
-                    # Sorting Arrays
+                    # Variable Scope
                         
                      # 1. local variable  2.global variable 
 
