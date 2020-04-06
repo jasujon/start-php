@@ -1,7 +1,10 @@
 <?php
     // $name = "Israk Jahan";
     $font = "verdana";
+
 ?>
+<?php session_start() ?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -30,25 +33,20 @@
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
 
-                <!-- File/Image Upload-->
+                <!-- Sessions-->
                 <?php 
 
-                    if(isset($_FILES['image'])){
-                        $fileName = $_FILES['image']['name'];
-                        $filetmp  = $_FILES ['image']['tmp_name'];
-                        move_uploaded_file($filetmp,"images/".$fileName);
-                        echo "Image Upload Successfully";
-                    }
+                    $_SESSION['username']  = "Israk Jahan";
+                    $_SESSION['password']  = "123";
+
+                    echo "UserName is " .$_SESSION['username']."<br/>";
+                    #session_unset();    #output: show error 
+                    echo "Password is " .$_SESSION['password'];
 
 
                     
                 
                 ?>
-
-                <form method="POST" action="" enctype="multipart/form-data">
-                    <input type="file" name = "image">
-                    <input type="submit" value="submit">
-                </form>
             </div>
 
         </div>
