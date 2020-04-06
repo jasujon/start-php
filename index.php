@@ -30,31 +30,16 @@
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
 
-                <!-- Date and Time Format-->
+                <!-- Include vs Require-->
                 <?php 
 
-                    #normal date format = 
-
-                        #echo date('Y/m/d');     #output : 2020/04/06
-                        #echo date('Y/M/D');     #output : 2020/Apr/Mon
-
-                        #echo date('y/m/d');     #output : 20/04/06
-                        #echo date('y-m-d');     #output : 20-04-06
-
+                    #Include 
+                        #when we doing mastering we use  include all the time ... Because when include function don't find any file then include just show warning ... But other files show perfectly ..  
                     
-                    #Today is format = 
-                        #echo "today is " . date('l');     #output : today is Monday
-
-                    # Default Time is format = 
-                        #echo "Default time is " . date('h:i:sa');     #output : Default time is 12:16:12pm
+                    #Require 
+                        #when we use require than  when its don't find any file this require directly show error
 
 
-                    # Bangladesh Time is format = 
-                        #date_default_timezone_set('Asia/Dhaka');
-                        #echo "Bangladesh time is " . date('h:i:sa');    #output : Bangladesh time is 04:21:52pm
-
-                    # Dynamic Time is format = 
-                        #echo date_default_timezone_get();        #output : Europe/Berlin
                     
                 
                 ?>
