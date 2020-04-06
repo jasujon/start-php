@@ -30,19 +30,25 @@
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
 
-                <!-- Include vs Require-->
+                <!-- File/Image Upload-->
                 <?php 
 
-                    #Include 
-                        #when we doing mastering we use  include all the time ... Because when include function don't find any file then include just show warning ... But other files show perfectly ..  
-                    
-                    #Require 
-                        #when we use require than  when its don't find any file this require directly show error
+                    if(isset($_FILES['image'])){
+                        $fileName = $_FILES['image']['name'];
+                        $filetmp  = $_FILES ['image']['tmp_name'];
+                        move_uploaded_file($filetmp,"images/".$fileName);
+                        echo "Image Upload Successfully";
+                    }
 
 
                     
                 
                 ?>
+
+                <form method="POST" action="" enctype="multipart/form-data">
+                    <input type="file" name = "image">
+                    <input type="submit" value="submit">
+                </form>
             </div>
 
         </div>
