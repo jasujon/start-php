@@ -30,63 +30,31 @@
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
 
-                <!-- Form Validation -->
-                <form method="post" action=<?php echo $_SERVER['PHP_SELF']?> >
-                    <table>
-                        <tr>
-                            <td>Name : </td>
-                            <td><input type= "text" name= "userName" required></td>
-                        </tr>
-                        <tr>
-                            <td>Email : </td>
-                            <td><input type= "email" name= "email" required ></td>
-                        </tr>
-
-                        <tr>
-                            <td>Comment : </td>
-                            <td><textarea name = "comment" rows="4" cols="22" required></textarea></td>
-                        </tr>
-
-                        <tr>
-                            <td>Gender : </td>
-                            <td>
-                                <input type="radio" name = "gender" value="female" required>Female
-                                <input type="radio" name = "gender" value="male" required>Male
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td> </td>
-                            <td><input type= "submit" name="submit" value="Submit" ></td>
-                        </tr>
-                    </table>
-                
-                </form>
-
+                <!-- Date and Time Format-->
                 <?php 
-                    if($_SERVER['REQUEST_METHOD'] == 'POST'){
-                        $name    = validate($_POST['userName']);
-                        $email   = validate($_POST['email']);
-                        $comment = validate($_POST['comment']);
-                        $gender  = validate($_POST['gender']);
+
+                    #normal date format = 
+
+                        #echo date('Y/m/d');     #output : 2020/04/06
+                        #echo date('Y/M/D');     #output : 2020/Apr/Mon
+
+                        #echo date('y/m/d');     #output : 20/04/06
+                        #echo date('y-m-d');     #output : 20-04-06
+
+                    
+                    #Today is format = 
+                        #echo "today is " . date('l');     #output : today is Monday
+
+                    # Default Time is format = 
+                        #echo "Default time is " . date('h:i:sa');     #output : Default time is 12:16:12pm
 
 
+                    # Bangladesh Time is format = 
+                        #date_default_timezone_set('Asia/Dhaka');
+                        #echo "Bangladesh time is " . date('h:i:sa');    #output : Bangladesh time is 04:21:52pm
 
-                        echo "name is ".$name."</br>";
-                        echo "email is ".$email."</br>";
-                        echo "comment is ".$comment."</br>";
-                        echo "gender is ".$gender."</br>";
-                    }
-
-
-                    function validate($data){
-                        $data = trim($data);
-                        $data = stripcslashes($data);
-                        $data = htmlspecialchars($data);
-
-                        return $data;
-                    }
-
+                    # Dynamic Time is format = 
+                        #echo date_default_timezone_get();        #output : Europe/Berlin
                     
                 
                 ?>
