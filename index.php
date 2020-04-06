@@ -33,20 +33,33 @@
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
 
-                <!-- Cookie-->
-                <?php 
-                    if(!isset($_COOKIE['visited'])){
-                        setcookie("visited","l",time()+86400,"/") or die("could not set cookie");
-                        echo "This is your first visited in our website";
-                    }else{
-                        echo "You are our old visitor";
-                    }
+                <!-- Filters-->
+
+                <table>
+                    <tr>
+                        <td>Filter Name</td>
+                        <td>Filter Id</td>
+                    </tr>
+
+                    <?php 
+                        foreach(filter_list() as $id=>$filter){
+                            echo '<tr><td>'.$filter.'</td><td>'.filter_id($filter).'</td></tr>';
+                        }
                     
 
 
                     
                 
-                ?>
+                    ?>
+                </table>
+
+                <?php
+                        $str = "<h2>I am learning PHP . </h2>";
+                        $newstr = filter_var($str, FILTER_SANITIZE_STRING);
+                        echo $newstr;
+                    
+                    ?>
+                
             </div>
 
         </div>
