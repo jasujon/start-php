@@ -33,15 +33,15 @@
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
 
-                <!-- Sessions-->
+                <!-- Cookie-->
                 <?php 
-
-                    $_SESSION['username']  = "Israk Jahan";
-                    $_SESSION['password']  = "123";
-
-                    echo "UserName is " .$_SESSION['username']."<br/>";
-                    #session_unset();    #output: show error 
-                    echo "Password is " .$_SESSION['password'];
+                    if(!isset($_COOKIE['visited'])){
+                        setcookie("visited","l",time()+86400,"/") or die("could not set cookie");
+                        echo "This is your first visited in our website";
+                    }else{
+                        echo "You are our old visitor";
+                    }
+                    
 
 
                     
