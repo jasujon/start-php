@@ -33,20 +33,21 @@
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
 
-                <!--PHP Exception (try & catch)-->
+                <!--Explode & Implode Function-->
                 <?php 
-                    function numCheck($num){
-                        if($num != 5){
-                            throw new Exception("Number is not 5 ..");
-                        }
-                    }
 
-                    try{
-                        numCheck(5);
-                        echo "Yes, You have done..!";
-                    }catch(Exception $e){
-                        echo "Error : ".$e->getMessage();
-                    }
+                    #Explode 
+
+                    $name = "Israk Jahan";
+                    #print_r(explode(" " , $name));      #output : Array ( [0] => Israk [1] => Jahan ) 
+                    $str=explode(" " , $name);
+                    echo $str[1];
+
+
+                    #Implode 
+                    $name = array("Israk","Jahan");
+                    echo implode(" ",$name); #output : Israk Jahan
+                    
                 ?>
                 
             </div>
