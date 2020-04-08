@@ -33,32 +33,22 @@
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
 
-                <!--array_column (FOR TAKE LAST NAME)-->
+                <!--array_combine-->
                 <?php 
-                    $name = array(
-                                array(
-                                    'id'            => '200',
-                                    'first_name'    => 'Jubayed',
-                                    'last_name'     => 'Alam'
-                                ),
-                                array(
-                                    'id'            => '201',
-                                    'first_name'    => 'Israk',
-                                    'last_name'     => 'Jahan'
-                                )
-                    );
+                    $name = array("Jubayed","Israk");
+                    $def  = array("CSE","English");
 
-                    $lastName = array_column($name,'last_name');
+                    $result = array_combine($name,$def);
 
                     print("<pre>");
-                    print_r($lastName);
+                    print_r($result);
                     print("</pre>");
 
                     #output : 
                     // Array
                     //     (
-                    //         [0] => Alam
-                    //         [1] => Jahan
+                    //         [Jubayed] => CSE
+                    //         [Israk] => English
                     //     )
                     
                 ?>
