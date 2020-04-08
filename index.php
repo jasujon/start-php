@@ -33,36 +33,32 @@
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
 
-                <!--array_change_key_case(Associative arrays)-->
+                <!--array_column (FOR TAKE LAST NAME)-->
                 <?php 
                     $name = array(
-                        "Jubayed Alam" => "25",
-                        "Israk Jahan"  => "19",
-                        "Sultan Alam"  => "10",
-                        "Sabina Aktar" => "16",
+                                array(
+                                    'id'            => '200',
+                                    'first_name'    => 'Jubayed',
+                                    'last_name'     => 'Alam'
+                                ),
+                                array(
+                                    'id'            => '201',
+                                    'first_name'    => 'Israk',
+                                    'last_name'     => 'Jahan'
+                                )
                     );
+
+                    $lastName = array_column($name,'last_name');
+
                     print("<pre>");
-                    print_r(array_change_key_case($name,CASE_UPPER));
+                    print_r($lastName);
                     print("</pre>");
 
                     #output : 
                     // Array
                     //     (
-                    //         [JUBAYED ALAM] => 25
-                    //         [ISRAK JAHAN] => 19
-                    //         [SULTAN ALAM] => 10
-                    //         [SABINA AKTAR] => 16
-                    //     )
-
-                    print("<pre>");
-                    print_r(array_change_key_case($name,CASE_LOWER));
-                    print("</pre>");
-                    // Array
-                    //     (
-                    //         [jubayed alam] => 25
-                    //         [israk jahan] => 19
-                    //         [sultan alam] => 10
-                    //         [sabina aktar] => 16
+                    //         [0] => Alam
+                    //         [1] => Jahan
                     //     )
                     
                 ?>
