@@ -33,20 +33,37 @@
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
 
-                <!--Explode & Implode Function-->
+                <!--array_change_key_case(Associative arrays)-->
                 <?php 
+                    $name = array(
+                        "Jubayed Alam" => "25",
+                        "Israk Jahan"  => "19",
+                        "Sultan Alam"  => "10",
+                        "Sabina Aktar" => "16",
+                    );
+                    print("<pre>");
+                    print_r(array_change_key_case($name,CASE_UPPER));
+                    print("</pre>");
 
-                    #Explode 
+                    #output : 
+                    // Array
+                    //     (
+                    //         [JUBAYED ALAM] => 25
+                    //         [ISRAK JAHAN] => 19
+                    //         [SULTAN ALAM] => 10
+                    //         [SABINA AKTAR] => 16
+                    //     )
 
-                    $name = "Israk Jahan";
-                    #print_r(explode(" " , $name));      #output : Array ( [0] => Israk [1] => Jahan ) 
-                    $str=explode(" " , $name);
-                    echo $str[1];
-
-
-                    #Implode 
-                    $name = array("Israk","Jahan");
-                    echo implode(" ",$name); #output : Israk Jahan
+                    print("<pre>");
+                    print_r(array_change_key_case($name,CASE_LOWER));
+                    print("</pre>");
+                    // Array
+                    //     (
+                    //         [jubayed alam] => 25
+                    //         [israk jahan] => 19
+                    //         [sultan alam] => 10
+                    //         [sabina aktar] => 16
+                    //     )
                     
                 ?>
                 
