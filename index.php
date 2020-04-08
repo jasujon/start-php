@@ -33,32 +33,21 @@
         <div class="main" style="min-height: 449px;background: #ccc;">
             <div class="container" style="padding-top:20px;">
 
-                <!-- Filters-->
-
-                <table>
-                    <tr>
-                        <td>Filter Name</td>
-                        <td>Filter Id</td>
-                    </tr>
-
-                    <?php 
-                        foreach(filter_list() as $id=>$filter){
-                            echo '<tr><td>'.$filter.'</td><td>'.filter_id($filter).'</td></tr>';
+                <!--PHP Exception (try & catch)-->
+                <?php 
+                    function numCheck($num){
+                        if($num != 5){
+                            throw new Exception("Number is not 5 ..");
                         }
-                    
+                    }
 
-
-                    
-                
-                    ?>
-                </table>
-
-                <?php
-                        $str = "<h2>I am learning PHP . </h2>";
-                        $newstr = filter_var($str, FILTER_SANITIZE_STRING);
-                        echo $newstr;
-                    
-                    ?>
+                    try{
+                        numCheck(5);
+                        echo "Yes, You have done..!";
+                    }catch(Exception $e){
+                        echo "Error : ".$e->getMessage();
+                    }
+                ?>
                 
             </div>
 
